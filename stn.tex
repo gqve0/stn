@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\begin{document}
+\begin{ttfamily}
+\textbf \texttt Split Triplex Numbers: \\
+\end{ttfamily}
+\begin{ttfamily}
+\texttt Split triplex numbers are a number system in which numbers are defined by three terms: one real, two imaginary.
+\end{ttfamily}
+$ a+bi+cj $
+\begin{ttfamily}
+\texttt where
+\end{ttfamily}
+$ i^{2}=j,i^{3}=1 $
+\\ \\
+\begin{ttfamily}
+\textbf  Addition:
+\end{ttfamily}
+\[ (a_{1}+b_{1}i+c_{1}j)+(a_{2}+b_{2}i+c_{2}j) = (a_{1}+a_{2})+(b_{1}+b_{2})i+(c_{1}+c_{2})j \]
+\begin{ttfamily}
+\texttt Multiplication:
+\end{ttfamily}
+\[ (a_{1}+b_{1}i+c_{1}j)(a_{2}+b_{2}i+c_{2}j) = (a_{1}a_{2}+b_{1}c_{2}+c_{1}b_{2})+(a_{1}b_{2}+b_{1}a_{2}+c_{1}c_{2})i+(a_{1}c_{2}+b_{1}b_{2}+c_{1}a_{2})j \]
+\begin{ttfamily}
+\texttt N function and conjugates:
+\end{ttfamily}
+\[ N(a+bi+cj)=a^{3}+b^{3}+c^{3}-3abc \]
+\[ (a+bi+cj)'=(a^{2}-bc)+(c^{2}-ab)i+(b^{2}-ac)j \]
+\[ N(x')=N^{2}(x) \]
+\begin{ttfamily}
+\texttt Division:
+\end{ttfamily}
+\[ \frac{1}{x}=\frac{x'}{N(x)} \]
+\begin{ttfamily}
+\texttt Matrix representation:
+\end{ttfamily}
+$ (a+bi+cj)= \begin{bmatrix}
+a & c & b \\
+b & a & c \\
+c & a & b
+\end{bmatrix} $ \\
+\begin{ttfamily}
+\texttt Zero divisors: \\
+\end{ttfamily}
+$ X $ and $ Y $ are zero divisors if $ XY=0 $ and $ X,Y\neq 0 $ , exempli gratia $ X = a+bi+cj, a+b+c=0 $ and $ Y = d+di+dj $ . Dividing by zero divisors is not allowed as $ N(z) = 0 $ if z is a zero divisor.
+\\ \\
+\begin{ttfamily}
+\texttt Idempotent elements
+\end{ttfamily}
+(An element e is idempotent if $ e^{2} = e $.): \\
+$ e_{1} = \frac{1+i+j}{3}, e_{2} = \frac{2-i-j}{i3},e_{1}3_{2}=0 $ \\ \\
+\begin{ttfamily}
+\texttt Diagonal basis:
+\end{ttfamily}
+\[ e_{3}=\frac{i-j}{\sqrt{3}} \]
+\[ e_{2}e_{3} = e_{3}, e_{3}^{2}=-e_{2} \]
+\[ a+bi+cj=(a+b+c)e_{1}+(a-\frac{b+c}{2})e_{2}+\frac{\sqrt{3}(b-c)e_{3}}{2} \]
+\[ ae_{1} + be_{2} + ce_{3}=\frac{a+2b}{3}+\frac{(a-b+\sqrt{3}c)i}{3}+\frac{(a-b-sqrt{3}c)j}{3} \]
+\[ (a_{1}e_{1}+b_{1}e_{2}+c_{1}e_{3})(a_{2}e_{1}=b_{2}e_{2}+c_{2}e_{3})=a_{1}a_{2}e_{1}+(b_{1}b_{2}-c_{1}c_{2})e_{2}+(b_{1}c_{2}-c_{1}b_{2})e_{3}\]
+\[ N(ae_{1}+be_{2}+ce_{3})=a(b^{2}+c^{2}) \]
+\[ (ae_{1}+be_{2}+ce_{3})'=(b^{2}+c^{2})e_{1}+abe_{2}-ace_{3} \] \\
+\begin{ttfamily}
+\texttt Expontientation and logarithims:
+\end{ttfamily}
+\[ exp(ae_{1}+be_{2}+ce_{3})=exp(a)e_{1}+exp(b)cos(c)e_{2}+exp(b)sin(c)e_{3} \]
+\[ ln(ae_{1}+be_{2}+ce_{3})=ln(a)e_{1}+ln(\sqrt{b^{2}+c^{2}})e_{2}+arctan(\frac{c}{b}) \]
+\end{document}
